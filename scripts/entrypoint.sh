@@ -12,7 +12,7 @@ fi
 echo "root=noReply@${DEFAULT_MAILSERVER}" > /etc/ssmtp/ssmtp.conf
 
 
-if [[ "x"ROUTER_VIRTUAL_HOST = "x" ]]; then
+if [[ "x"$ROUTER_VIRTUAL_HOST = "x" ]]; then
 	export ROUTER_VIRTUAL_HOST="localhost"
 fi
 
