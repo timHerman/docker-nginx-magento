@@ -24,7 +24,7 @@ RUN chmod 755 /scripts/*.sh
 
 # nginx config
 RUN cp /config/nginx/nginx-host.conf /etc/nginx/sites-available/default
-RUN cp /config/nginx/apc.ini /etc/php5/conf.d/apc.ini
+RUN cp /config/nginx/apc.ini /etc/php5/mods-available/apcu.ini
 
 # php-fpm config
 RUN cp /config/nginx/php.ini /etc/php5/fpm/php.ini
