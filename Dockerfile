@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM ubuntu:latest
 MAINTAINER Tim Herman <tim@belg.be>
 
 # Keep upstart from complaining
