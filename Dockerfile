@@ -23,6 +23,7 @@ ADD /config /config
 RUN chmod 755 /scripts/*.sh
 
 # nginx config
+RUN cp /config/nginx/nginx.conf /etc/nginx/nginx.conf
 RUN cp /config/nginx/nginx-host.conf /etc/nginx/sites-available/default
 RUN cp /config/nginx/apc.ini /etc/php5/mods-available/apcu.ini
 
